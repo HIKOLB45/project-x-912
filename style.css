@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+#canvas-container canvas {
+    display: block;
+    cursor: grab;
+}
+
+#canvas-container canvas:active {
+    cursor: grabbing;
+}
+
+aside {
+    box-shadow: 20px 0 50px rgba(0,0,0,0.5);
+}
+
+/* Ефект неонового підсвічування для кнопки */
+button {
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.2);
+}
+
+button:hover {
+    box-shadow: 0 0 30px rgba(37, 99, 235, 0.4);
+}
