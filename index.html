@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>UltraCarport 5x5 | Engineering Model</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white">
+    <div class="flex h-screen overflow-hidden">
+        <aside class="w-80 bg-zinc-900 border-r border-zinc-800 p-6 flex flex-col z-10 shadow-2xl">
+            <div class="mb-8">
+                <span class="bg-blue-600 text-[10px] font-bold px-2 py-1 rounded">INDUSTRIAL</span>
+                <h1 class="text-2xl font-black mt-2 tracking-tighter">CANOPY <span class="text-blue-500 text-sm">V2.6</span></h1>
+            </div>
+
+            <div class="space-y-6 flex-grow">
+                <div>
+                    <label class="text-zinc-500 text-[10px] uppercase font-bold tracking-widest">Об'єкт</label>
+                    <p class="text-lg font-semibold">Навіс під авто (5x5м)</p>
+                </div>
+                <div class="p-4 bg-black/50 rounded-lg border border-zinc-800">
+                    <p class="text-xs text-zinc-400 mb-2 italic">Аналіз за фото:</p>
+                    <ul class="text-sm space-y-2">
+                        <li>✅ Ферми: 60х40мм</li>
+                        <li>✅ Стійки: 50х50мм</li>
+                        <li>✅ Дах: ПС-20 Графіт</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-auto pt-6 border-t border-zinc-800">
+                <button class="w-full bg-blue-600 hover:bg-blue-500 py-3 rounded-lg font-bold transition-all transform hover:-translate-y-1">
+                    ЗАМОВИТИ ПРОЄКТ
+                </button>
+            </div>
+        </aside>
+
+        <main class="flex-grow relative bg-[#050505]">
+            <div id="canvas-container" class="w-full h-full"></div>
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 bg-zinc-900/80 backdrop-blur rounded-full text-[10px] text-zinc-500 uppercase tracking-widest border border-zinc-800">
+                Використовуйте мишу для огляду (360°)
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
